@@ -69,7 +69,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
     //Category Section
         SizedBox(height: Dimensions.height30,),
-        //FoodCategory(),
+        Expanded(
+            child: SingleChildScrollView(
+        child: FoodCategory())),
 
         //popular text
         SizedBox(height: Dimensions.height30,),

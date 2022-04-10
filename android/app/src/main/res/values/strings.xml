@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">kobis_xtra </string>
+    <string name="facebook_app_id">1091259238328230</string>
+    <string name="fb_login_protocol_scheme">fb1091259238328230</string>
+    <string name="facebook_client_token"> 5c061856c340676f444823dd0c70e2ad</string>
+
+
+</resources>

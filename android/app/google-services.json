@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "345988109215",
+    "project_id": "kobisxtra",
+    "storage_bucket": "kobisxtra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345988109215:android:b2df313d485f589288a3aa",
+        "android_client_info": {
+          "package_name": "com.appsloveworld.kobis_xtra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345988109215-ehtaktc7nq9jcolcqpfoh0qtnt6gp1sr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsloveworld.kobis_xtra",
+            "certificate_hash": "8ea28d4f98fd1d753addf987a0f10639b30e5179"
+          }
+        },
+        {
+          "client_id": "345988109215-3m4hshhn13a4dt9og4v68todfflpq9qs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdTocS0mnqKEJP-I7D0q-NMtNzyZ0p18Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345988109215-3m4hshhn13a4dt9og4v68todfflpq9qs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

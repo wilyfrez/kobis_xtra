@@ -18,13 +18,13 @@ Future <void> init()async {
   
   //repos
   Get.lazyPut(() => PopularProductRepo(apiClient:Get.find()));
-  //Get.lazyPut(() => FoodCategoryRepo(apiClient:Get.find()));
+  Get.lazyPut(() => FoodCategoryRepo(apiClient:Get.find()));
   Get.lazyPut(() => ProductCategoryRepo(apiClient:Get.find(),));
   Get.lazyPut(() => CartRepo());
 
   //Controllers
   Get.lazyPut(() => PopularProductController(popularProductRepo:Get.find()));
-  //Get.lazyPut(() => FoodCategoryController(foodCategoryRepo:Get.find()));
+  Get.lazyPut(() => FoodCategoryController(foodCategoryRepo:Get.find()));
   Get.lazyPut(() => ProductCategoryController(productCategoryRepo:Get.find()));
   Get.lazyPut(() => CartController(cartRepo:Get.find()));
 }

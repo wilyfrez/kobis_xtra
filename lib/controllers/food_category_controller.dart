@@ -18,7 +18,7 @@ class FoodCategoryController extends GetxController{
     Response response = await foodCategoryRepo.getFoodCategoryList();
     if (response.statusCode == 200){
       _foodCategoryList = [];
-
+      _foodCategoryList.addAll(foodCategory.fromJson(response.body).categories);
       _isLoaded = true;
       update();
     }else {

@@ -15,6 +15,8 @@ import 'package:kobis_xtra/utils/dimensions.dart';
 import 'package:get/get.dart';
 import 'package:kobis_xtra/routes/approutes.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:kobis_xtra/models/food_category_model.dart';
+
 
 
 class FoodPageBody extends StatefulWidget {
@@ -27,6 +29,7 @@ class FoodPageBody extends StatefulWidget {
 
 class _FoodPageBodyState extends State<FoodPageBody> {
 
+  var scrollcontroller = ScrollController();
   int activeIndex = 0;
 
 
@@ -67,11 +70,6 @@ class _FoodPageBodyState extends State<FoodPageBody> {
              }
          ),
 
-    //Category Section
-        SizedBox(height: Dimensions.height30,),
-        Expanded(
-            child: SingleChildScrollView(
-        child: FoodCategory())),
 
         //popular text
         SizedBox(height: Dimensions.height30,),
@@ -86,6 +84,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           )
         ),
 
+        //all products
         GetBuilder<ProductCategoryController> (builder: (allProducts){
           return allProducts.isLoaded? ListView.builder(
             physics: NeverScrollableScrollPhysics(),

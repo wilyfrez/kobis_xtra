@@ -16,7 +16,7 @@ class AppRoutes {
   static String getInitial() => '$initial';
   static String getMainFood() => '$mainFood';
   static String getPopularFood(int pageId) => '$popularFood?pageId=$pageId';
-
+  static String getFoodCategory(int listID) => '$foodCategory?listID=$listID';
   static String getFoodCategoryDetail(int listID) => '$foodCategoryDetail?listID=$listID';
 
 
@@ -31,6 +31,12 @@ class AppRoutes {
       transition: Transition.fadeIn
     ),
 
+    GetPage (name: foodCategory, page:() {
+      var listID = Get.parameters['listID'];
+      return FoodCategory(listID:int.parse(listID!),);
+    },
+        transition: Transition.fadeIn
+    ),
 
     GetPage (name: foodCategoryDetail, page:() {
       var listID = Get.parameters['listID'];

@@ -134,7 +134,7 @@ int pageId;
                   children: [
                     GestureDetector(
                         onTap: (){
-                         // popularProduct.setQuantity(false);
+                          popularProduct.setQuantity(false);
                         },
                         child: Icon(Icons.remove, color: Colors.black26,)),
                     SizedBox(width: Dimensions.width10/2),

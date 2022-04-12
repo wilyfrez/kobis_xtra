@@ -34,7 +34,7 @@ class KobisLoginUi extends StatelessWidget {
 
 
     Get.find<PopularProductController>().getPopularProductList();
-    //Get.find<FoodCategoryController>().getFoodCategoryList();
+    Get.find<FoodCategoryController>().getFoodCategoryList();
 
     Get.find<ProductCategoryController>().getProductCategoryList();
 
